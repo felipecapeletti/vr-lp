@@ -1,6 +1,6 @@
 export function Features() {
   return (
-<section id="servicos" className="grid md:grid-cols-3 gap-8 px-10 py-20">
+<section id="servicos" className="flex flex-col md:flex-row items-center md:items-start gap-8 px-10 md:py-20">
   <div className="text-center">
     <h3 className="text-xl text-purple-400 font-bold mb-2">Setups VR Personalizados</h3>
     <p className="text-gray-400">

@@ -1,10 +1,10 @@
 export function Projects() {
   return (
-    <section id="lancamentos" className="px-10 py-20">
-      <h3 className="text-3xl font-bold mb-10">Nossos Últimos Lançamentos</h3>
+    <section id="lancamentos" className="px-10 py-20 flex flex-col items-center gap-10">
+      <h3 className="text-xl md:text-3xl font-bold mb-4">Nossos Últimos Lançamentos</h3>
       <div className="w-full flex flex-col items-center gap-10">
         <div className="w-full md:w-[80%] flex flex-col bg-slate-950 hover:bg-purple-950 duration-700 p-4 border border-purple-400 rounded-lg gap-4">
-          <h2>VR Dodgebal</h2>
+          <h2 className="flex justify-center">VR Dodgebal</h2>
           <div className="flex flex-col md:flex-row justify-around gap-4 items-center">
             <img src="/dodgeball.gif" className="w-100 rounded-xl" alt="" />
             <p className="flex flex-col text-sm text-gray-300 gap-6">
@@ -17,7 +17,7 @@ export function Projects() {
           </div>
         </div>
         <div className="w-full md:w-[80%] flex flex-col bg-slate-950 hover:bg-purple-950 duration-700 p-4 border border-purple-400 rounded-lg gap-4">
-          <h2>VR Battle Arena</h2>
+          <h2 className="flex justify-center">VR Battle Arena</h2>
           <div className="flex flex-col md:flex-row-reverse justify-around gap-4 items-center">
             <img src="/gorn.gif" className="w-100 rounded-xl" alt="" />
             <p className="flex flex-col text-sm text-gray-300 gap-6">
@@ -37,7 +37,7 @@ export function Projects() {
           </div>
         </div>
         <div className="w-full md:w-[80%] flex flex-col bg-slate-950 hover:bg-purple-950 duration-700 p-4 border border-purple-400 rounded-lg gap-4">
-          <h2>VR Card Game</h2>
+          <h2 className="flex justify-center">VR Card Game</h2>
           <div className="flex flex-col md:flex-row justify-around gap-4 items-center">
             <img src="card.gif" className="w-100 rounded-xl" alt="" />
             <p className="flex flex-col text-sm text-gray-300 gap-6">

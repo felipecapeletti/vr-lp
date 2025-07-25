@@ -21,11 +21,12 @@ export default function Header() {
 
     {/* Nav */}
     <nav className="w-full md:w-[30%] flex justify-center space-x-6 text-sm order-3 md:order-2">
-      <a href="#about" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Sobre</a>
-      <a href="#servicos" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Serviços</a>
-      <a href="#produtos" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Produtos</a>
-      <a href="#lancamentos" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Jogos</a>
-      <a href="#contato" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Contato</a>
+      <a href="/#about" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Sobre</a>
+      <a href="/#servicos" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Serviços</a>
+      <a href="/#lancamentos" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Lançamentos</a>
+      <a href="/produtos" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Produtos</a>
+      <a href="/jogos" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Jogos</a>
+      <a href="/contato" className="text-white hover:text-purple-400 hover:scale-105 duration-700">Contato</a>
     </nav>
   </header>
 
