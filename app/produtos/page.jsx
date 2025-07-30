@@ -33,6 +33,21 @@ export default function Products() {
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [closing, setClosing] = useState(false);
+  
+  const handleClose = () => {
+    setClosing(true);
+    setTimeout(() => {
+      setSelectedProduct(null);
+      setClosing(false);
+    }, 400);
+  };
+
+  {products.map((product) => (
+    <div key={`preload-${product.id}`} className="hidden">
+      <ModelViewer src={product.model} />
+    </div>
+  ))}
 
   return (
     <main className="bg-[#0f0f1a] text-white min-h-[90vh] px-10 py-20 border-t border-purple-400">
@@ -55,9 +70,11 @@ export default function Products() {
       {/* Modal */}
       {selectedProduct && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
-          <div className="bg-gray-900 border border-purple-400 rounded-lg shadow-md shadow-purple-400 max-w-3xl w-full relative">
+          <div
+            className={`h-fit md:h-[70vh] relative bg-gray-900 border border-purple-400 rounded-lg shadow-md shadow-purple-400 overflow-hidden ${closing ? "animate-shrink" : "animate-expand"}`}
+          >
             <button
-              onClick={() => setSelectedProduct(null)}
+              onClick={handleClose}
               className="absolute top-2 right-2 text-white bg-purple-600 hover:bg-purple-800 px-3 py-1 rounded-lg cursor-pointer transition duration-300"
             >
               Fechar
@@ -66,7 +83,7 @@ export default function Products() {
               <h3 className="text-2xl font-bold mb-4">{selectedProduct.name}</h3>
               <p className="text-gray-300 mb-6">{selectedProduct.description}</p>
               {/* Viewer 3D */}
-              <div className="w-full h-[400px] bg-black rounded-lg overflow-hidden card-bg">
+              <div className="w-full h-[500px] bg-black rounded-lg overflow-hidden card-bg">
                 <ModelViewer src={selectedProduct.model} />
               </div>
             </div>
