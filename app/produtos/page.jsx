@@ -11,24 +11,24 @@ export default function Products() {
       name: "VR Vision Pro X",
       description:
         "Um headset de realidade virtual de última geração, com rastreamento de movimento 6DoF e controles ergonômicos, ideal para jogos e aplicações profissionais.",
-      image: "/product1.png",
-      model: "/product1.glb",
+      image: "/products/product1.png",
+      model: "/products/product1.glb",
     },
     {
       id: 2,
       name: "NeuroDive XR Helmet",
       description:
         "Capacete XR imersivo com bloqueio de interferências externas, projeção de 210° e sensores neurais integrados para experiências hiper-realistas.",
-      image: "/product2.png",
-      model: "/product2.glb",
+      image: "/products/product2.png",
+      model: "/products/product2.glb",
     },
     {
       id: 3,
       name: "HoloEdge Elite",
       description:
         "Headset premium com resolução 8K, áudio espacial e mapeamento de ambiente avançado para experiências VR e XR profissionais.",
-      image: "/product3.png",
-      model: "/product3.glb",
+      image: "/products/product3.png",
+      model: "/products/product3.glb",
     },
   ];
 
